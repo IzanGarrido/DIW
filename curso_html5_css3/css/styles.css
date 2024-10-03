@@ -1,0 +1,84 @@
+.div_externo {
+    background-image: url(../imgs/old_map.png);
+    height: 1000px;
+    width: 1000px;
+    padding: 20px;
+
+}
+
+#primero {
+    display: flex;
+    background-color: #3d3847;
+    height: 8%;
+    border-bottom: 5px solid black;
+    padding: 10px;
+    align-items: center;
+
+}
+
+h1 {
+    margin-left: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+}
+
+#segundo {
+    background-image: url(../imgs/red015.jpg);
+    height: 20%;
+    padding: 5px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#segundo div {
+    border-radius: 100%;
+
+}
+
+#segundo p {
+    font-size: 20px;
+}
+
+#tercero {
+    background-image: url(../imgs/lgrey008.jpg);
+    height: 60%;
+    border-bottom: 5px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.cajablanca {
+    background-color: white;
+    padding: 5px;
+    width: 240px;
+}
+
+.cajablanca p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    
+}
+
+h3 {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+
+#tercero div {}
+
+#cuarto {
+    background-color: #3d3847;
+    height: 7%;
+
+
+}
