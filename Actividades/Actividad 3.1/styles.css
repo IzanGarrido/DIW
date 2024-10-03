@@ -1,36 +1,69 @@
 body {
-    font-family: Arial;
-    
-    
+
+    background-color: darkgray;
+
+}
+
+#caja-exterior {
+
+    background-color: lightgray;
+    margin: auto;
+    outline: 5px solid black;
+    border: 10px solid white;
+    height: 600px;
+    width: 700px;
+    padding-inline: 20px;
+
+}
+
+#primera {
+
+    padding-top: 1px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1px;
+    font-family: Arial black;
+    border-bottom: 1px solid black;
+
 }
 
 h1 {
-    margin-left: 10px;
+    font-size: 48px;
+
 }
 
-hr {
-    margin: 5px;
+#caja-interior {
+
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 690px;
+
 }
+
+.fecha {
+    margin-inline: 20px;
+    margin-block: 5px;
+
+}
+
+.segunda-tercera {
+    display: inline-block;
+    width: 400px;
+    background-color: cyan;
+    margin-inline: 20px;
+    padding-inline: 20px;
+    margin-block: 1px;
+
+}
+
+#cuarta {
+    display: inline-block;
+    width: 100px;
     
-.caja {
-    background-color: whitesmoke;
-    width: 800px;
-    height: 900px;
-    margin: auto;   
-    outline: 5px solid black;
-    border: 10px solid white;
 }
-.caja1 {
-    background-color: lightgray;
-    margin-top: 100px;
-    margin-left: 20px;
-    width: 500px;
-    height: 200px;
-    padding: 5px;
-}
-
-.caja2 {
-    background-color: lightgray;
-    width: 500px;
-    height: 200px;
+#quinta {
+    border-top: 1px solid black;
+    text-align: center;
 }
