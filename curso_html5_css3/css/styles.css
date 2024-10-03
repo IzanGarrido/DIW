@@ -1,15 +1,20 @@
+body {
+    background: black;
+}
+
 .div_externo {
     background-image: url(../imgs/old_map.png);
-    height: 1000px;
+    height: 800px;
     width: 1000px;
     padding: 20px;
+    margin: auto;
 
 }
 
 #primero {
     display: flex;
     background-color: #3d3847;
-    height: 8%;
+    height: 6%;
     border-bottom: 5px solid black;
     padding: 10px;
     align-items: center;
@@ -24,8 +29,8 @@ h1 {
 
 #segundo {
     background-image: url(../imgs/red015.jpg);
-    height: 20%;
-    padding: 5px;
+    height: 14%;
+    padding-top: 10px;
 
     display: flex;
     flex-direction: row;
@@ -41,15 +46,18 @@ h1 {
 
 #segundo p {
     font-size: 20px;
+    margin-top: 3px;
+    font-family: 'Courier New', Courier, monospace;
+
 }
 
 #tercero {
     background-image: url(../imgs/lgrey008.jpg);
-    height: 60%;
+    height: 70%;
     border-bottom: 5px solid black;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
 
 }
 
@@ -57,12 +65,13 @@ h1 {
     background-color: white;
     padding: 5px;
     width: 240px;
+    margin-top: 40px;
 }
 
 .cajablanca p {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
     line-height: 25px;
     
 }
@@ -71,14 +80,20 @@ h3 {
     text-align: center;
     padding-bottom: 10px;
     border-bottom: 1px solid black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 1px;
 }
 
-
-#tercero div {}
-
 #cuarto {
+    display: flex;
     background-color: #3d3847;
-    height: 7%;
+    height: 6%;
+    text-align: center;
+    color: aliceblue;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+
 
 
 }
