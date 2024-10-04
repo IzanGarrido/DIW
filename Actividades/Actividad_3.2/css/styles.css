@@ -1,0 +1,25 @@
+table,
+th,
+td {
+    border: 1px solid #333;
+    border-collapse: collapse;
+    
+}
+
+th {
+    background-image: url(../imgs/fondo_gris.gif);
+}
+
+th,td {
+    text-align: center;
+   justify-content: center;
+}
+
+td img {
+    float: left;
+    
+}
+.cabecera {
+    text-align: left;
+
+}
