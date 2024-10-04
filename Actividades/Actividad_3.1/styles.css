@@ -10,18 +10,19 @@ body {
     margin: auto;
     outline: 5px solid black;
     border: 10px solid white;
-    height: 600px;
-    width: 700px;
+    height: 550px;
+    width: 550px;
     padding-inline: 20px;
 
 }
 
 #primera {
 
-    padding-top: 1px;
     display: flex;
     flex-direction: column;
     line-height: 1px;
+    align-items: start;
+    justify-content: center;
     font-family: Arial black;
     border-bottom: 1px solid black;
 
@@ -33,13 +34,14 @@ h1 {
 }
 
 #caja-interior {
-
-    margin: 20px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    width: 690px;
+    justify-content: space-between;
+    margin-bottom: 15px;
 
+}
+
+.interior-izquierda {
+    width: 75%;
 }
 
 .fecha {
@@ -49,21 +51,42 @@ h1 {
 }
 
 .segunda-tercera {
-    display: inline-block;
-    width: 400px;
+
     background-color: cyan;
-    margin-inline: 20px;
     padding-inline: 20px;
     margin-block: 1px;
+    padding-block: 1px;
+    margin-left: 20px;
 
 }
 
 #cuarta {
-    display: inline-block;
-    width: 100px;
-    
+    margin-left: 5px;
+
+    width: 25%;
+    line-height: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 300px;
+
+    h3 {
+        margin-top: 40px;
+    }
+
 }
+
+.mover {
+    margin-left: 15px;
+}
+
+
+
+#carlos {
+    margin-left: 40px;
+
+}
+
 #quinta {
     border-top: 1px solid black;
     text-align: center;
+
 }
