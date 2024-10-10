@@ -1,23 +1,22 @@
-body {
-    background: black;
-}
-
-.div_externo {
-    background-image: url(../imgs/old_map.png);
-    height: 800px;
+/* Estilos para  */
+main {
+    background: linear-gradient(to bottom, red, white);
+    height: 900px;
     width: 1000px;
     padding: 20px;
     margin: auto;
 
 }
 
-#primero {
+header {
     display: flex;
-    background-color: #3d3847;
+    background: linear-gradient(to bottom, #6666d4, lightblue);
     height: 6%;
     border-bottom: 5px solid black;
     padding: 10px;
     align-items: center;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 8px 5px 5px gray;
 
 }
 
@@ -27,48 +26,56 @@ h1 {
     color: aliceblue;
 }
 
-#segundo {
-    background-image: url(../imgs/red015.jpg);
+nav {
+    background: linear-gradient(to right,orange, yellow);
     height: 14%;
     padding-top: 10px;
-
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    box-shadow: 8px 5px 5px gray;
+
 
 }
 
-#segundo div {
+nav div {
     border-radius: 100%;
 
 }
 
-#segundo p {
+nav p {
     font-size: 20px;
     margin-top: 3px;
     font-family: 'Courier New', Courier, monospace;
 
 }
 
-#tercero {
-    background-image: url(../imgs/lgrey008.jpg);
+section {
+    background-color: white;
     height: 70%;
     border-bottom: 5px solid black;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+    box-shadow: 8px 5px 5px gray;
+
 
 }
 
-.cajablanca {
+article {
     background-color: white;
     padding: 5px;
     width: 240px;
-    margin-top: 40px;
+    margin-top: 20px;
+    border-style: solid;
+    border-width: 70px 20px 50px 20px;
+    border-image: url(../imgs/movil.png);
+    border-image-slice: 70 20 50 20;
+    
 }
 
-.cajablanca p {
+article p {
     text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
@@ -79,21 +86,22 @@ h1 {
 h3 {
     text-align: center;
     padding-bottom: 10px;
-    border-bottom: 1px solid black;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 1px;
+    text-shadow: 2px 2px 4px;
 }
 
-#cuarto {
+footer {
     display: flex;
-    background-color: #3d3847;
+    background: linear-gradient(to top, #6666d4, lightblue);
     height: 6%;
     text-align: center;
     color: aliceblue;
     font-size: 12px;
     align-items: center;
     justify-content: center;
-
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 8px 5px 5px gray;
 
 
 }
