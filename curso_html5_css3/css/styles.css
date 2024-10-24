@@ -1,3 +1,8 @@
+/* Fuentes importadas: */
+
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Londrina+Sketch&family=Luckiest+Guy&display=swap');
+
 /* Estilos para la página */
 main {
     background: linear-gradient(to bottom, red, white);
@@ -5,10 +10,12 @@ main {
     width: 1000px;
     padding: 20px;
     margin: auto;
+    font-family: 'abel';
 
 }
 /* Estilos de la cabecera de la pagina*/
 header {
+    font-family: 'Luckiest Guy';
     display: flex;
     background: linear-gradient(to bottom, #6666d4, lightblue);
     height: 6%;
@@ -23,8 +30,7 @@ header {
 h1 {
     position: relative;
     margin-left: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    color: aliceblue;
+    color: white;
     bottom: 10px;
 }
 /* Estilos para la imagen de la cabecera*/
@@ -35,6 +41,7 @@ h1 img{
 }
 /* Estilos de la barra navegadora de la pagina */
 #nav {
+
     background: linear-gradient(to right,orange, yellow);
     height: 14%;
     padding-top: 10px;
@@ -44,7 +51,6 @@ h1 img{
     align-items: center;
     box-shadow: 8px 5px 5px gray;
 
-
 }
 /* Estilos para las cajas de la barra navegadora*/
 #nav div {
@@ -52,23 +58,23 @@ h1 img{
 
 }
 /* Estilos para el texto de la barra navegadora*/
-#nav p {
+#nav div p {
+    color:lightseagreen;
+    font-family: 'Luckiest Guy';
     font-size: 20px;
     margin-top: 3px;
-    font-family: 'Courier New', Courier, monospace;
-    
 
 }
 
-#nav p a {
+#nav div p a {
     text-decoration: none;
     color: white;
-    text-shadow: 0px 0px 5px white;
+    text-shadow: 2px 2px #f06529;
 }
 
-#nav p a:hover {
+#nav div p a:hover {
     transition: 0.5s;
-    text-shadow: 2px 2px 0px red;
+    text-shadow: 0px 0px 5px  #ff7e42;
 }
 
 /* Estilos existentes para nav */
@@ -125,11 +131,10 @@ h1 img{
     color: white;
     text-decoration: none;
     font-size: 14px;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 /* Flecha indicadora */
-#nav div:hover > p::after {
+#nav div:nth-child(2):hover > p::after {
     content: '';
     position: absolute;
     bottom: 5px;
@@ -233,7 +238,6 @@ article {
 /* Estilos para el texto de los articulos */
 article p {
     text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
     line-height: 25px;
     
@@ -242,7 +246,6 @@ article p {
 h3 {
     text-align: center;
     padding-bottom: 10px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 1px;
     text-shadow: 2px 2px 4px;
 }
