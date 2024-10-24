@@ -13,28 +13,40 @@
 
     <main>
         <header>
-            <img src="../imgs/logo.png">
-            <h1><b>Curso de HTML5 y CSS3</b></h1>
+            
+            <h1>
+                <img src="../imgs/logo.png">
+                <b>Curso de HTML5 y CSS3</b>
+            </h1>
         </header>
 
-        <nav>
+        <nav id="nav">
             <div>
                 <img src="../imgs/book.png">
-                <p style="color: gray;"><b>Contenidos</b></p>
+                <p><a href="index.html"><b>Contenidos</b></a></p>
             </div>
             <div>
                 <img src="../imgs/film.png">
-                <p style="color: orange;"><b>Vídeos</b></p>
+                <p><a href="videos.html"><b>Vídeos</b></a></p>
+                <ul>
+                    <li><a href="">Vídeo 1</a></li>
+                    <li><a href="">Vídeo 2</a></li>
+                    <li><a href="">Vídeo 3</a></li>
+                </ul>
             </div>
             <div>
                 <img src="../imgs/mail.png">
-                <p style="color: orange;"><b>Contacto</b></p>
+                <p><a href=""><b>Contacto</b></a></p>
             </div>
         </nav>
 
         <section>
+            
             <div>
-                <article>
+                <div class="chincheta" id="chincheta1"></div>
+                
+                <article id="primero">
+                    
                     <img src="../imgs/html5.png">
                     <h3><b>H T M L 5</b></h3>
                     <p>Veremos los nuevos <b>elementos estructurales, </b>así como los nuevos elementos existentes para
@@ -43,9 +55,13 @@
                     </p>
 
                 </article>
+                
+                
             </div>
+            
             <div>
-                <article>
+                <div class="chincheta" id="chincheta2"></div>
+                <article id="segundo">
                     <img src="../imgs/css3.png">
                     <h3><b>C S S 3</b></h3>
                     <p>Mejoraremos nuestros diseños web utilizando las nuevas características<br>de CSS3: <b>efectos,
@@ -56,7 +72,8 @@
 
             </div>  
             <div>
-                <article>
+                <div class="chincheta" id="chincheta3"></div>
+                <article id="tercero">
                     <img  style="background: radial-gradient(white, lightgray);" src="../imgs/javascript.png">
                     <h3><b>J a v a s c r i p t</b></h3>
                     <p>Junto con HTML5 aparecen nuevas<br><b>API javascript</b> que nos aportan multitud de facilidades
