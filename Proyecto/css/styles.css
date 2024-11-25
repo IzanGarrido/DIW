@@ -1,192 +1,111 @@
-/* Estilos generales */
+/* Importación de fuentes de Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Londrina+Sketch&display=swap");
+
+/* Estilo general del cuerpo */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
-  /* Contenedor del formulario de contacto */
-  .contact-form {
-    background-color: white;
-    padding: 20px;
-    max-width: 600px;
-    margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Estilos para los labels */
-  .contact-form label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  /* Estilos para los inputs y textarea */
-  .contact-form input[type="text"],
-  .contact-form input[type="email"],
-  .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    box-sizing: border-box;
-  }
-  
-  /* Estilos para el botón de enviar */
-  .contact-form button {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .contact-form button:hover {
-    background-color: #555;
-  }
-  
-  /* Estilos para el texto de los párrafos en la sección de contacto */
-  #contacto p {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  
-  /* Estilos responsivos */
-  @media (max-width: 768px) {
-    .contact-form {
-      padding: 15px;
-    }
-  
-    .contact-form input,
-    .contact-form textarea {
-      font-size: 14px;
-    }
-  
-    .contact-form button {
-      font-size: 14px;
-      padding: 8px 16px;
-    }
-  }
-  
-  
-  /* Contenedor del logo y el título */
-  .header-container {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    background-color: #f8f9fa;
-  }
-  
-  .logo {
-    width: 80px;
-    height: auto;
-    margin-right: 20px;
-  }
-  
-  h1 {
-    margin: 0;
-    font-size: 24px;
-    color: #333;
-  }
-  
-  /* Barra de navegación */
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #333;
-    overflow: hidden;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 14px 20px;
-    display: inline-block;
-  }
-  
-  nav ul li a:hover {
-    background-color: #555;
-  }
-  
-  /* Estilos para las secciones del contenido */
-  section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Estilo de los títulos de las secciones */
-  h2 {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  /* Estilo de los párrafos */
-  p {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 20px;
-  }
-  
-  /* Estilo de la lista de eventos */
-  ul {
-    padding-left: 20px;
-  }
-  
-  ul li {
-    margin-bottom: 10px;
-  }
-  
-  ul li strong {
-    color: #333;
-  }
-  
-  /* Estilo del footer */
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  footer ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  footer ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  footer ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  footer ul li a:hover {
-    text-decoration: underline;
-  }
-  
+  background-color: rgba(30, 30, 30, 0.8); /* Fondo oscuro con transparencia */
+  font-family: Arial; /* Fuente principal del sitio */
+}
+
+/* Estilos del encabezado */
+header {
+  background-color: rgb(44, 44, 44); /* Fondo gris oscuro */
+  padding: 10px; /* Espaciado interno */
+  display: flex; /* Organización en fila de elementos hijos */
+  flex-direction: row;
+  justify-content: space-between; /* Distribución de espacio entre elementos */
+  align-items: center; /* Alineación vertical de elementos */
+  color: white; /* Color de texto en blanco */
+  border-bottom: 1px solid white; /* Línea de separación inferior */
+}
+
+/* Estilo del contenedor de título y logo en el encabezado */
+header div {
+  display: flex; /* Organización en fila de texto e imagen */
+  flex-direction: row;
+  justify-content: center; /* Centrado de contenido */
+  align-items: center;
+  font-size: 20px; /* Tamaño de texto */
+  font-family: "Londrina Sketch", sans-serif; /* Fuente personalizada */
+  text-shadow: 3px 3px 5px rgb(100, 100, 100); /* Sombra del texto */
+}
+
+/* Tamaño y espaciado de la imagen del logo */
+header img {
+  height: 50px;
+  width: auto;
+  margin-inline: 20px;
+  margin-right: 40px;
+}
+
+/* Estilos de la barra de navegación */
+nav {
+  display: flex; /* Organización en fila de enlaces */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo general de los enlaces dentro del nav */
+nav div a {
+  text-decoration-line: none; /* Sin subrayado */
+  color: white; /* Color de texto blanco */
+}
+
+/* Efecto hover de los enlaces de navegación */
+nav div a:hover {
+  color: lightgray; /* Cambio de color al pasar el cursor */
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.4); /* Sombra al hacer hover */
+  font-size: 26px; /* Aumento de tamaño */
+  transition: height ease; /* Transición para suavizar el cambio */
+}
+
+/* Estilo de los contenedores de los enlaces de navegación */
+nav div {
+  margin-inline: 40px; /* Espaciado horizontal entre elementos */
+  font-size: 18px; /* Tamaño de fuente */
+  font-family: Arial black; /* Tipo de fuente en negrita */
+  text-shadow: 2px 2px 5px rgb(110, 110, 110); /* Sombra de texto */
+}
+
+/* Efecto hover en los contenedores de enlaces de navegación */
+nav div:hover {
+  cursor: pointer; /* Cambio del cursor a pointer */
+  color: rgba(222, 222, 222, 0.4); /* Cambio de color al pasar el cursor */
+}
+
+/* Estilos del pie de página */
+footer {
+  background-color: rgb(44, 44, 44); /* Fondo gris oscuro */
+  color: white; /* Color de texto blanco */
+  padding: 20px; /* Espaciado interno */
+  display: flex; /* Alineación en fila */
+  justify-content: center; /* Centrado de contenido */
+  align-items: center;
+  border-top: 1px solid white; /* Línea de separación superior */
+}
+
+/* Tamaño y espaciado de las imágenes de iconos en el pie de página */
+footer img {
+  height: 20px;
+  width: auto;
+  margin: 10px;
+}
+
+/* Estilos para el contenido principal */
+main {
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  background: linear-gradient(to bottom, rgb(10, 10, 10), rgb(80, 80, 80)); /* Fondo degradado de gris oscuro */
+  width: 80%; /* Anchura del contenedor */
+  margin-inline: auto; /* Centrado horizontal */
+  box-shadow: 5px 5px 10px rgb(110, 110, 110); /* Sombra para resaltar el contenedor */
+  padding: 20px; /* Espaciado interno */
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Espacio entre los elementos hijos */
+  color: white; /* Color de texto */
+  font-family: Arial, sans-serif; /* Fuente del contenido */
+  margin-bottom: 20px; /* Espacio inferior */
+  margin-top: 20px; /* Espacio superior */
+}

@@ -1,0 +1,80 @@
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+article {
+    width: 750px;
+    margin-block: 20px;
+    padding: 20px;
+    border-radius: 10px 20px 0px 15px;
+    background: linear-gradient(135deg, #2e2e2e, #1c1c1c); /* Degradado en tonos gris oscuro a negro */
+    color: #d3d3d3; /* Color del texto en gris claro */
+    border: 1px solid #444; /* Borde gris oscuro */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
+    transition: 0.5s ease, box-shadow 0.3s ease;
+}
+
+article h2 {
+    color: #e0e0e0; /* Gris claro para el título */
+}
+
+article:hover {
+    background: linear-gradient(135deg, #3a3a3a, #222); /* Cambio de degradado al hacer hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.7); /* Aumento de sombra en hover */
+}
+
+
+.contenido {
+    transition: max-height 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+   
+    opacity: 0;
+}
+
+article:hover .contenido {
+    max-height: 200px; /* Ajusta según la altura del contenido */
+    opacity: 1;
+}
+
+
+aside {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 250px;
+    color: #e0e0e0; /* Color del texto en gris claro */
+    text-align: center;
+    height: 320px;
+}
+
+aside div {
+    width: 100px;
+    display: flex;
+    height: 50px;
+    margin-block: 5px;
+    border: 1px solid rgb(53, 53, 53);
+    border-radius: 40px;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to bottom, rgb(60, 60, 60), rgb(40, 40, 40));
+    text-shadow: 0px 2px 4px rgb(150, 150, 150);
+    align-items: center;
+    justify-content: center;
+    
+}
+
+aside div:hover {
+
+    background: linear-gradient(to top, rgb(60, 60, 60), rgb(40, 40, 40));
+    text-shadow: 0px -2px 4px rgb(150, 150, 150);
+
+}
+
+aside a {
+    text-decoration: none;
+    color: rgb(180, 180, 180);
+   
+}

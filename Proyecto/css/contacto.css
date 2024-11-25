@@ -1,0 +1,51 @@
+section {
+    margin: auto;
+    width: 60%;
+    border-image: url(../images/ordenador-borde.png);
+    border-style:solid;
+    border-width: 40px 10px 60px 10px;
+    border-image-slice: 40 10 70 10;
+}   
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    align-items: center;
+}
+
+form input, form textarea, form button {
+    width: 500px;
+    background-color: #4d4d4d;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+form input:focus, form textarea:focus {
+    background-color: #666666;
+    outline: none;
+    transform: scale(1.02);
+}
+
+form textarea {
+    resize: none;
+    height: 100px;
+}
+
+form button {
+    text-shadow: 2px 2px 2px lightgray;
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: #8c8c8c;
+    opacity: 0.8;
+}
+
+form input:hover, form textarea:hover, form button:hover {
+    background-color: #5a5a5a;
+}
