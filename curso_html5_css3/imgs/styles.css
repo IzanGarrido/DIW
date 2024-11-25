@@ -38,23 +38,6 @@ h1 img{
     position: relative;
     top: 15px;
     left: -10px;
-    animation-name: rotar;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}
-/* Animación para rotar la imagen de la cabecera*/
-@keyframes rotar {
-    from {
-        transform: rotate(0deg)
-    }
-    50% {
-        transform: rotate(180deg)
-    }
-    to {
-        transform: rotate(360deg)
-    }
-
-    
 }
 /* Estilos de la barra navegadora de la pagina */
 #nav {
@@ -207,112 +190,37 @@ section {
 
 .chincheta {
     position: absolute;
-    background-image: url(../imgs/chincheta.png); /* Ruta de la imagen */
+    background-image: url(../imgs/chincheta.png);
     height: 49px;
     width: 35px;
-    top: 10px; /* Ajusta esta posición si las chinchetas están fuera de lugar */
-    z-index: 10; /* Asegura que estén por encima de otros elementos */
-    background-size: cover; /* Escala la imagen correctamente */
+    top: 10px;
+    z-index: 1;
 }
 /*Imagen superpuesta en el borde de la imagen*/
 #chincheta1{
     position: absolute;
-    left: 40px;
-    /*animation: mueveChincheta1 1s forwards; /* Llama a la animación */
-
-}
-
-.achincheta1 {
-    animation: mueveChincheta1 1s forwards; /* Llama a la animación */
+    left: 238px;
     
-}
-
-@keyframes mueveChincheta1 {
-    from {
-        left: 40px;
-    }
-    to {
-        left: 238px;
-    }
 
 }
-
 #chincheta2{
     position: absolute;
-    left: 400px;
+    left: 500px;
 
-}
-
-.achincheta2 {
-    animation: mueveChincheta2 1s forwards; /* Llama a la animación */
-
-}
-
-@keyframes mueveChincheta2 {
-    from {
-        left: 400px;
-    }
-    to {
-        left: 500px;
-    }
-
-}
-
-#chincheta3{
-    position: absolute;
-    left: 720px;
     
 }
-
-.achincheta3 {
-    animation: mueveChincheta3 1s forwards; /* Llama a la animación */
-
-}
-
-@keyframes mueveChincheta3 {
-    from {
-        left: 720px; /* Inicio de la animación */
-    }
-    to {
-        left: 755px; /* Final de la animación */
-    }
+#chincheta3{
+    position: absolute;
+    left: 755px;
+    
 }
 
 #primero {
-    transform: rotate(0deg);
-    
-}
-
-.aprimero {
-    animation: animArticle1 0.5s forwards    ; /* Llama a la animación */
-
-}
-
-@keyframes animArticle1 {
-    from {
-        transform: rotate(0deg); /* Posición inicial */
-    }
-    to {
-        transform: rotate(-2deg); /* Posición final */
-    }
+    transform: rotate(-2deg);
 }
 
 #tercero {
-    transform: rotate(0deg);
-
-}
-
-.atercero {
-    animation: animArticle3 0.5s forwards; /* Llama a la animación */
-}
-
-@keyframes animArticle3 {
-    from {
-        transform: rotate(0deg); /* Posición inicial */
-    }   
-    to {
-        transform: rotate(2deg); /* Posición final */
-    }
+    transform: rotate(2deg)
 }
 
 /* Estilos para los articulos de la sección */
