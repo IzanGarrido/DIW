@@ -38,6 +38,23 @@ h1 img{
     position: relative;
     top: 15px;
     left: -10px;
+    animation-name: rotar;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+/* Animación para rotar la imagen de la cabecera*/
+@keyframes rotar {
+    from {
+        transform: rotate(0deg)
+    }
+    50% {
+        transform: rotate(180deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+
+    
 }
 /* Estilos de la barra navegadora de la pagina */
 #nav {
