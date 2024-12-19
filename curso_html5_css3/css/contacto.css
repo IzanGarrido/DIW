@@ -1,3 +1,34 @@
+@media (max-width: 1024px) {
+    #contenedorFormulario {
+        margin: 4%;
+        width: 58%;
+        padding: 2% 4%;
+    }
+
+    #contenedorFormulario h1 {
+        position: static;
+        padding: 0% 1%;
+        margin: 2% 0% 0% 0%;
+    }
+
+    input:not([type="submit"]) {
+        height: 5%;
+        width: 55%;
+    }
+
+    input:not([type="submit"]):focus {
+        width: 61%;
+    }
+
+    textarea {
+        width: 75%;
+    }
+
+    input[type="submit"] {
+        display: block; /* Mostrar como elemento en bloque */
+    }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Aguafina+Script&family=Londrina+Sketch&family=Luckiest+Guy&display=swap');
 
 section {

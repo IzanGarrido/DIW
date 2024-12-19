@@ -1,3 +1,66 @@
+/*media query para ancho maximo de 1024px*/
+/* Media query para ancho máximo de 1024px */
+@media (max-width: 1024px) {
+    main {
+        width: 90%;
+        min-width: 320px;
+    }
+    header {
+        font-size: 0.7em;
+    }
+    #nav li {
+        margin: 0% 8% 2% 8%;
+    }
+}
+
+/* Media query para ancho máximo de 700px */
+@media (max-width: 700px) {
+    #nav li {
+        margin: 0% 4% 1% 4%;
+    }
+}
+
+/* Media query para ancho máximo de 475px */
+@media (max-width: 475px) {
+    #nav a {
+        overflow: visible;
+    }
+    #nav a {
+        display: none; /* Ocultar inicialmente */
+    }
+    #nav a.desplegado {
+        display: block; /* Mostrar cuando se despliega */
+        background: url('../imgs/menu.png') no-repeat center 10px;
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+    }
+}
+/*@media (max-width: 1024px) {
+    main {
+        width: 90%;
+        min-width: 320px;
+    }
+    header {
+        font-size: 0.7em;
+    }
+    li {
+        margin: 0% 8% 2% 8%
+    }
+}
+
+@media (max-width: 700px) {
+    li {
+        margin: 0% 4% 1% 4%
+    }
+}
+
+@media (max-width: 475px) {
+    #nav a {
+        overflow: visible;
+    }
+}*/
+
 /* Fuentes importadas: */
 
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Luckiest+Guy&display=swap');
@@ -57,6 +120,9 @@ h1 img{
     
 }
 /* Estilos de la barra navegadora de la pagina */
+#nav a {
+    overflow: hidden;
+}
 #nav {
 
     background: linear-gradient(to right,orange, yellow);
