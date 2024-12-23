@@ -1,50 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <title>PaiJocs</title>
-  <link rel="stylesheet" href="../css/styles.css">
-  <link rel="icon" type="image/x-icon" href="../images/logo.png">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Londrina+Sketch&display=swap"
-    rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaiJocs - Asociación de Videojuegos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/breadcrumbs.js"></script>
 
 </head>
 
 <body>
 
+    <div id="grid-container">
 
-    <header>
+        <header>
+            <a href="index.html"><img src="../images/logo.webp" alt="Logo de PaiJocs" class="logo"></a>
 
-      <div>
-        <img src="../images/logo.png" alt="Imagen de logo">
-        <h1>PaiJocs</h1>
-      </div>
+            <div class="header-text">
+                <h1>PaiJocs</h1>
+            </div>
+        </header>
 
-      <nav>
-        <div><a href="./index.html">Inicio</a></div>
-        <div><a href="./nosotros.html">Nosotros</a></div>
-        <div><a href="./eventos.html">Eventos</a></div>
-        <div><a href="./contacto.html">Contacto</a></div>
+        <nav>
+            <ul>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <ul class="breadcrumbs" id="breadcrumbs"></ul>
+        
 
-      </nav>
+        <main>
+            <h2>¿Quiénes somos?</h2>
+            <p>
+                Somos una empresa dedicada a ofrecer los mejores servicios en nuestra área.
+                Con más de 10 años de experiencia, nuestro equipo está comprometido con la
+                calidad y la satisfacción del cliente.
+            </p>
+            <h2>Nuestra Misión</h2>
+            <p>
+                Proporcionar soluciones innovadoras que superen las expectativas de nuestros
+                clientes, contribuyendo al desarrollo sostenible y al bienestar de la comunidad.
+            </p>
+            <h2>Nuestra Visión</h2>
+            <p>
+                Ser líderes en nuestro sector, reconocidos por nuestra excelencia y compromiso
+                con la calidad y la innovación.
+            </p>
+        </main>
 
-    </header>
-    <main>
 
-    </main>
+        <footer>
+            <p>&copy; 2024 PaiJocs - Asociación de Videojuegos</p>
+            <a href="documento.html"><strong>Guia de estilo</strong></a>
+            <p>Síguenos en redes sociales:</p>
+            <ul>
+                <li><a href="https://x.com/home" target="_blank"><img src="../images/X.png" alt="X"></a></li>
+                <li><a href="https://www.facebook.com/?locale=es_ES" target="_blank"><img src="../images/Facebook.png"
+                            alt="Facebook"></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="../images/Instagram.svg"
+                            alt="Instagram"></a></li>
+                <li><a href="https://www.reddit.com/" target="_blank"><img src="../images/reddit.png" alt="Reddit"></a>
+                </li>
+            </ul>
+        </footer>
 
-    <footer>
-
-      <a href="https://Facebook.com" target="_blank"><img src="../images/Facebook.png" alt="Facebook"></a>
-      <a href="https://X.com" target="_blank"><img src="../images/X.png" alt="X"></a>
-      <a href="https://Instagram.com" target="_blank"><img src="../images/Instagram.svg" alt="Instagram"></a>
-      <a href="https://Reddit.com" target="_blank"><img src="../images/reddit.png" alt="Reddit"></a>
-
-  </footer>
+    </div>
 
 </body>
 

@@ -1,111 +1,236 @@
-/* Importación de fuentes de Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Londrina+Sketch&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
-/* Estilo general del cuerpo */
 body {
-  background-color: rgba(30, 30, 30, 0.8); /* Fondo oscuro con transparencia */
-  font-family: Arial; /* Fuente principal del sitio */
+    background-color: rgb(70, 70, 70);
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    
 }
 
-/* Estilos del encabezado */
+#grid-container {
+    display: grid;
+    background-color: rgb(70, 70, 70);
+    padding: 10px 40px 60px 40px;
+    grid-template-areas:
+        'header header header header'
+        'nav nav nav nav'
+        'breadcrumbs breadcrumbs breadcrumbs breadcrumbs' 
+        'main main main aside'
+        'footer footer footer footer';
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr 85% 15%;
+}
+
+
 header {
-  background-color: rgb(44, 44, 44); /* Fondo gris oscuro */
-  padding: 10px; /* Espaciado interno */
-  display: flex; /* Organización en fila de elementos hijos */
-  flex-direction: row;
-  justify-content: space-between; /* Distribución de espacio entre elementos */
-  align-items: center; /* Alineación vertical de elementos */
-  color: white; /* Color de texto en blanco */
-  border-bottom: 1px solid white; /* Línea de separación inferior */
+    grid-area: header;
+    /*border: 1px solid white;*/
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(230, 230, 230, 1) 0%, rgba(144, 144, 144, 1) 17%, rgba(118, 118, 118, 1) 61%, rgba(10, 10, 10, 1) 97%);
+    padding: 10px;
+
+    border-radius: 5px;
+    box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.5);
+
 }
 
-/* Estilo del contenedor de título y logo en el encabezado */
-header div {
-  display: flex; /* Organización en fila de texto e imagen */
-  flex-direction: row;
-  justify-content: center; /* Centrado de contenido */
-  align-items: center;
-  font-size: 20px; /* Tamaño de texto */
-  font-family: "Londrina Sketch", sans-serif; /* Fuente personalizada */
-  text-shadow: 3px 3px 5px rgb(100, 100, 100); /* Sombra del texto */
+header h1 {
+    font-family: "Pixelify Sans", serif;
+    padding-left: 50px;
+    font-size: 50px;
+    
 }
 
-/* Tamaño y espaciado de la imagen del logo */
-header img {
-  height: 50px;
-  width: auto;
-  margin-inline: 20px;
-  margin-right: 40px;
+.logo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
 }
 
-/* Estilos de la barra de navegación */
+.logo:hover {
+    animation: rotar 1s;
+
+}
+
+@keyframes rotar {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+
+}
+
+.header-text {
+    text-align: left;
+    text-shadow: 2px 2px 5px black;
+}
+
+
 nav {
-  display: flex; /* Organización en fila de enlaces */
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+    grid-area: nav;
+    /*border: 1px solid white;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-block: 20px;
 }
 
-/* Estilo general de los enlaces dentro del nav */
-nav div a {
-  text-decoration-line: none; /* Sin subrayado */
-  color: white; /* Color de texto blanco */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
 }
 
-/* Efecto hover de los enlaces de navegación */
-nav div a:hover {
-  color: lightgray; /* Cambio de color al pasar el cursor */
-  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.4); /* Sombra al hacer hover */
-  font-size: 26px; /* Aumento de tamaño */
-  transition: height ease; /* Transición para suavizar el cambio */
+nav ul li {
+    display: inline;
+    transition: transform 0.3s ease;
+    /* Transición suave al hacer hover */
 }
 
-/* Estilo de los contenedores de los enlaces de navegación */
-nav div {
-  margin-inline: 40px; /* Espaciado horizontal entre elementos */
-  font-size: 18px; /* Tamaño de fuente */
-  font-family: Arial black; /* Tipo de fuente en negrita */
-  text-shadow: 2px 2px 5px rgb(110, 110, 110); /* Sombra de texto */
+nav ul li:hover {
+    transform: scale(1.2);
+    /* Aumentar el tamaño al pasar el ratón */
 }
 
-/* Efecto hover en los contenedores de enlaces de navegación */
-nav div:hover {
-  cursor: pointer; /* Cambio del cursor a pointer */
-  color: rgba(222, 222, 222, 0.4); /* Cambio de color al pasar el cursor */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-shadow: 3px 3px 4px black;
 }
 
-/* Estilos del pie de página */
-footer {
-  background-color: rgb(44, 44, 44); /* Fondo gris oscuro */
-  color: white; /* Color de texto blanco */
-  padding: 20px; /* Espaciado interno */
-  display: flex; /* Alineación en fila */
-  justify-content: center; /* Centrado de contenido */
-  align-items: center;
-  border-top: 1px solid white; /* Línea de separación superior */
+.breadcrumbs {
+    grid-area: breadcrumbs;
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    margin: 10px 0;
+    padding: 0;
+    align-items: center; 
+    padding-left: 10px;
 }
 
-/* Tamaño y espaciado de las imágenes de iconos en el pie de página */
-footer img {
-  height: 20px;
-  width: auto;
-  margin: 10px;
+
+.breadcrumbs li {
+    display: inline;
 }
 
-/* Estilos para el contenido principal */
+.breadcrumbs li a {
+    text-decoration: none;
+    color: white;
+}
+
+.breadcrumbs li::after {
+    content: ">";
+    margin: 0 0.5rem;
+    color: #ccc;
+}
+
+.breadcrumbs li:last-child::after {
+    content: "";
+}
+
+.breadcrumbs li:last-child {
+    color: #ccc;
+}
+
+
+
 main {
-  border-radius: 5px;
-  border: 1px solid lightgray;
-  background: linear-gradient(to bottom, rgb(10, 10, 10), rgb(80, 80, 80)); /* Fondo degradado de gris oscuro */
-  width: 80%; /* Anchura del contenedor */
-  margin-inline: auto; /* Centrado horizontal */
-  box-shadow: 5px 5px 10px rgb(110, 110, 110); /* Sombra para resaltar el contenedor */
-  padding: 20px; /* Espaciado interno */
-  display: flex;
-  flex-direction: column;
-  gap: 40px; /* Espacio entre los elementos hijos */
-  color: white; /* Color de texto */
-  font-family: Arial, sans-serif; /* Fuente del contenido */
-  margin-bottom: 20px; /* Espacio inferior */
-  margin-top: 20px; /* Espacio superior */
+    grid-area: main;
+    padding: 20px;
+    background-color:rgb(120, 120, 120);
+    border-radius: 20px;
+    margin-right: 10px;
+    box-shadow: inset 0 0 10px black;
+}
+
+aside {
+    grid-area: aside;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 5px 5px 0px rgba(70, 70, 70, 0.8), 6px 6px 0px white ;
+    background-color: rgb(50, 50, 50);
+
+}
+
+
+aside ul li {
+    margin-bottom: 5px;
+    list-style: none;    
+    transition: transform 0.3s ease;
+    
+}
+
+aside ul li:hover {
+    transform: scale(1.2);
+    
+}
+
+aside ul li a:hover {
+    transform: scale(1.2);
+    color: rgb(244, 245, 240);
+    
+}
+
+aside ul li a {
+    text-decoration: none;
+    color:rgb(220, 220, 220);
+
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.5);
+
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(10, 10, 10, 1) 0%, rgba(118, 118, 118, 1) 17%, rgba(144, 144, 144, 1) 61%, rgba(230, 230, 230, 1) 97%);
+}
+
+footer a {
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer ul li {
+    display: inline;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer ul li a img {
+    border-radius: 100%;
+    height: 40px;
+    width: auto;
 }

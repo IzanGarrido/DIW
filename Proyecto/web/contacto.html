@@ -2,63 +2,50 @@
 <html lang="es">
 
 <head>
-  
-  <meta charset="UTF-8">
-  <title>PaiJocs</title>
-  <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="../css/contacto.css">
-  <link rel="icon" type="image/x-icon" href="../images/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaiJocs - Asociación de Videojuegos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/breadcrumbs.js"></script>
 
 </head>
 
 <body>
 
+    <div id="grid-container">
 
-    <header>
+        <header>
+            <a href="index.html"><img src="../images/logo.webp" alt="Logo de PaiJocs" class="logo"></a>
+            
+            <div class="header-text">
+                <h1>PaiJocs</h1>
+            </div>
+        </header>
 
-      <div>
-        <img src="../images/logo.png" alt="Imagen de logo">
-        <h1>PaiJocs</h1>
-      </div>
-
-      <nav>
-        <div><a href="./index.html">Inicio</a></div>
-        <div><a href="./nosotros.html">Nosotros</a></div>
-        <div><a href="./eventos.html">Eventos</a></div>
-        <div><a href="./contacto.html">Contacto</a></div>
-
-      </nav>
-
-    </header>
-
-    <main>
-
-      <section>
-
-        <form>
-          <input type="text" id="nombre" name="nombre" placeholder="Nombre">
-          <input type="email" id="email" name="email" placeholder="Correo electrónico">
-          <textarea id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
-
-          <button type="button">Enviar</button>
-
-        </form>
-
-      </section>
-
-      <img src="" alt="">
-
-    </main>
+        <nav>
+            <ul>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <ul class="breadcrumbs" id="breadcrumbs"></ul>
+        
 
 
-    <footer>
+        <footer>
+            <p>&copy; 2024 PaiJocs - Asociación de Videojuegos</p>
+            <a href="documento.html"><strong>Guia de estilo</strong></a>
+            <p>Síguenos en redes sociales:</p>
+            <ul>
+                <li><a href="https://x.com/home" target="_blank"><img src="../images/X.png" alt="X"></a></li>
+                <li><a href="https://www.facebook.com/?locale=es_ES" target="_blank"><img src="../images/Facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="../images/Instagram.svg" alt="Instagram"></a></li>
+                <li><a href="https://www.reddit.com/" target="_blank"><img src="../images/reddit.png" alt="Reddit"></a></li>
+            </ul>
+        </footer>
 
-      <a href="https://Facebook.com" target="_blank"><img src="../images/Facebook.png" alt="Facebook"></a>
-      <a href="https://X.com" target="_blank"><img src="../images/X.png" alt="X"></a>
-      <a href="https://Instagram.com" target="_blank"><img src="../images/Instagram.svg" alt="Instagram"></a>
-      <a href="https://Reddit.com" target="_blank"><img src="../images/reddit.png" alt="Reddit"></a>
-
-  </footer>
+    </div>
 
 </body>
 
