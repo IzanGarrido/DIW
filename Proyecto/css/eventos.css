@@ -8,20 +8,28 @@ section {
     border: 1px solid white;
     border-radius: 0px 35px 5px 50px;
     background-image: url(../images/background.jpg);
+    display: grid;
+    grid-template-areas: 'titulo titulo'
+                         'imagen texto';
+    grid-template-columns: 30% 70%;
 
 }
 
-figure {
+section h1 {
+    grid-area: titulo;
+}
+
+section figure {
+    grid-area: imagen;
     text-align: center;
     width: 150px;
 }
 
-figure img {
+section article {
+    grid-area: texto;
+}
+
+section figure img {
     height: 100px;
     width: auto;
-}
-aside {
-    position:sticky;
-    top:0;
-    height: 440px;
 }
