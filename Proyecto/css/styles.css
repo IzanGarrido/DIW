@@ -1,9 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
+@media all and (max-width: 475px){
+    * {
+        font-size: 18px;
+    }
+    header {
+        flex-direction: column;
+    }
+    header h1 {
+        font-size: 40px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 0!important;
+        margin: 0!important;
+        font-size: 12px !important; 
+    }
+    
+    footer ul {
+        flex-direction: column;
+    }
+
+}
+
+* {
+    font-family: "Roboto Condensed", serif;
+    
+    font-size: 22px;
+}
 body {
     background-color: rgb(70, 70, 70);
-    font-size: 20px;
-    font-family: Arial, sans-serif;
     color: white;
     margin: 0;
     padding: 0;

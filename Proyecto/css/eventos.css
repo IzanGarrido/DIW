@@ -1,5 +1,30 @@
-main {
+@media all and (max-width: 475px) {
 
+    main {
+        grid-column: 1 / 5;
+    }
+    section {
+        
+        grid-template-areas: 'titulo imagen'
+                             'texto texto' !important;
+
+        grid-template-columns: 50% 50% !important;
+        margin: 5 !important;
+        padding: 10 !important;
+    }
+
+    section figure {
+        width: 80px !important;
+    }
+
+    section figure img {
+        height: 50px !important;
+        width: auto;
+    }
+
+    aside {
+        display: none;
+    }
 }
 
 section {
@@ -12,7 +37,6 @@ section {
     grid-template-areas: 'titulo titulo'
                          'imagen texto';
     grid-template-columns: 30% 70%;
-
 }
 
 section h1 {

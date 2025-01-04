@@ -1,0 +1,53 @@
+@media all and (max-width: 475px){
+    main {
+        grid-column: 1/5;
+        grid-template-areas: 'title'
+                            'texto'
+                            'video' !important;
+                            grid-template-columns: 100% !important;
+        padding-right: 15px !important;
+        
+    }
+    aside {
+        display: none;
+    }
+
+    figure video {
+        height: 100px !important;
+        width: auto;
+    }
+
+}
+
+main {
+    display: grid;
+
+    grid-template-areas: 'title title'
+                         'texto video'
+                         'texto video';
+    grid-template-columns: 50% 50%;
+}
+
+
+main h1 {
+    grid-area: title;
+}
+
+main h1, article {
+    padding-left: 40px;
+}
+
+article {
+    grid-area: texto;
+    padding-top: 30px;
+    
+}
+
+figure{
+    grid-area: video;
+
+}
+figure video {
+    height: 250px;
+    width: auto;
+}

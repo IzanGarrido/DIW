@@ -1,3 +1,64 @@
+
+@media all and (max-width: 475px){
+    section {
+        flex-direction: column;
+        margin: 5px !important;
+        padding: 5px !important;
+    }
+    section figure img {
+        height: 100px !important;
+        width: 150px !important;
+    }
+
+}
+
 main {
     grid-column: 1 / 5;
+    display: grid;
+    grid-template-areas: 'section1'
+        'section2'
+        'section3';
+}
+
+#section1 {
+    grid-area: section1;
+    justify-content: center;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 100px;
+    background: linear-gradient(to bottom, black, gray);
+
+}
+
+#section2 {
+    grid-area: section2;
+
+
+}
+
+#section3 {
+    grid-area: section3;
+
+}
+
+#section2,
+#section3 {
+    padding: 20px;
+    border: 3px solid white;
+    border-radius: 40px 40px 5px 5px;
+    align-items: center;
+    background-color: gray;
+}
+
+section {
+    display: flex;
+    margin-bottom: 40px;
+    margin-inline: 60px;
+
+}
+
+section figure img {
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
 }
