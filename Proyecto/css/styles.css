@@ -1,6 +1,6 @@
 /* Importación de fuentes desde Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap'); /* Fuente Pixelify Sans */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap'); /* Fuente Roboto Condensed */
 
 /* Estilos para pantallas pequeñas (max-width: 475px) */
 @media all and (max-width: 475px) {
@@ -12,17 +12,71 @@
 
     /* Estilos para el encabezado (header) en pantallas pequeñas */
     header {
+        margin: 5px !important; /* Ajustar el margen */
+        padding: 5px !important; /* Ajustar el padding */
         flex-direction: column; /* Organizar los elementos del header en columna */
     }
 
     /* Estilos para el título (h1) dentro del header */
     header h1 {
         font-size: 40px; /* Reducir el tamaño de la fuente del título */
+        padding: 0 !important; /* Eliminar padding */
+    }
+    
+    nav {
+        flex-direction: column; /* Organizar los elementos de la navegación en columna */
     }
 
     /* Estilos para la barra de navegación (nav) en pantallas pequeñas */
-    nav {
+    nav ul {
         flex-direction: column; /* Organizar los elementos de la navegación en columna */
+        align-items: center; /* Centrar los elementos horizontalmente */
+        display: none !important; /* Ocultar la lista de navegación */
+        overflow: hidden; /* Ocultar contenido que exceda el contenedor */
+        opacity: 0; /* Inicia invisible */
+        transition: opacity 0.8s ease-in-out; /* Suavizar la opacidad */
+    }   
+
+    /* Estilos para los enlaces de la barra de navegación */
+    nav > a { 
+        font-size: 30px; /* Aumentar tamaño de fuente */
+        display: block !important; /* Asegurar que el enlace sea un bloque */
+        text-align: center; /* Centrar el texto */
+        padding: 15px; /* Padding alrededor del enlace */
+        color: #fff; /* Color blanco */
+        border-radius: 40px; /* Bordes redondeados */
+        text-decoration: none; /* Eliminar subrayado */
+    }
+
+    /* Animación de deslizamiento para el menú */
+    @keyframes slideDown {
+        from {
+            max-height: 0;
+            opacity: 0;
+        }
+        to {
+            max-height: 500px; /* Ajusta según el contenido del menú */
+            opacity: 1;
+        }
+    }
+    
+    /* Activación del menú desplegado */
+    nav ul.desplegado { 
+        display: block !important;
+        list-style: none;
+        animation: slideDown 0.8s forwards; /* Animación para desplegar */
+    }
+
+    /* Estilos para los elementos de la lista dentro del menú desplegado */
+    nav ul.desplegado li { 
+        display: block !important; /* Asegurar que cada elemento sea un bloque */
+        text-align: center; /* Centrar el texto */
+    }
+
+    /* Estilos para los enlaces dentro del menú desplegado */
+    nav ul.desplegado li a { 
+        display: block !important; /* Asegurar que el enlace sea un bloque */
+        padding: 15px; /* Padding alrededor del enlace */
     }
 
     /* Ajustes para el contenedor principal (main) en pantallas pequeñas */
@@ -36,6 +90,7 @@
     footer ul {
         flex-direction: column; /* Organizar los elementos del footer en columna */
     }
+
 }
 
 /* Estilos generales */
@@ -45,7 +100,7 @@
 }
 
 body {
-    background-color: rgb(70, 70, 70); /* Color de fondo oscuro */
+    background-color: rgb(70, 70, 70); /* Fondo oscuro */
     color: white; /* Color del texto blanco */
     margin: 0; /* Eliminar márgenes */
     padding: 0; /* Eliminar padding */
@@ -122,6 +177,10 @@ nav {
     align-items: center; /* Centrar en el eje transversal */
     gap: 15px; /* Espacio entre elementos */
     padding-block: 20px; /* Padding arriba y abajo */
+}
+
+nav > a {
+    display: none; /* Ocultar inicialmente los enlaces */
 }
 
 /* Estilos para los elementos de la lista en la navegación */
