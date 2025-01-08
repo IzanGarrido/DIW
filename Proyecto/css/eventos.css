@@ -38,7 +38,7 @@ section {
     margin-bottom: 20px; /* Margen inferior */
     border: 1px solid white; /* Borde blanco */
     border-radius: 0px 35px 5px 50px; /* Bordes redondeados en las esquinas */
-    background-image: url(../images/background.jpg); /* Fondo de imagen */
+    background-image: url(../media/images/background.jpg); /* Fondo de imagen */
     display: grid; /* Usar grid para el layout */
     grid-template-areas: 'titulo titulo' /* Áreas de la cuadrícula: título ocupa el espacio superior completo */
                          'imagen texto'; /* Imagen a la izquierda y texto a la derecha */

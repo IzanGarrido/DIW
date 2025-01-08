@@ -42,7 +42,7 @@ main {
 /* Estilos para el formulario en pantallas grandes */
 main form {
     border-style: solid; /* Borde sólido */
-    border-image: url(../images/borde-switch.png); /* Imagen del borde */
+    border-image: url(../media/images/borde-switch.png); /* Imagen del borde */
     border-image-slice: 30 80 30 80; /* Desglose de la imagen del borde */
     border-image-width: 50px 140px 50px 140px; /* Ancho del borde */
     display: flex; /* Usar flexbox */
